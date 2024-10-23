@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins("https://gvfbossa.github.io/*")
+                .allowedOrigins("https://gvfbossa.github.io")
                 .allowedMethods("POST", "OPTIONS")
                 .allowedHeaders("*");
     }
