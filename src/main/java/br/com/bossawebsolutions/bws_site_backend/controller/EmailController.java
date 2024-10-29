@@ -25,7 +25,7 @@ public class EmailController {
                 "\nTelefone: " + emailRequest.getPhone() +
                 "\nMensagem: " + emailRequest.getMessage();
 
-        emailService.sendEmail("contato.bossaws@gmail.com", subject, text);
+        emailService.sendEmail("contato@bossawebsolutions.com.br", subject, text);
 
         Map<String, String> response = new HashMap<>();
         response.put("message", "E-mail enviado com sucesso!");
